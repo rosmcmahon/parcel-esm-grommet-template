@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# dotenv environment variables file
+.env
+.env.test
+
+# parcel cache and build (https://parceljs.org/)
+.parcel-cache
+dist
+
+# misc
+secrets

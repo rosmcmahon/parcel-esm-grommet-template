@@ -1,0 +1,35 @@
+{
+  "name": "example-package-name",
+  "version": "1.0.0",
+  "description": "no description",
+  "type": "module",
+  "scripts": {
+    "clean": "shx rm -rf dist/ .parcel-cache/ docs/",
+    "start": "parcel src/index.html",
+    "build": "npm run clean && parcel build --public-url . src/index.html",
+    "github.io": "npm run build && shx cp -R ./dist/ ./docs && git add ./docs/ && git commit -m 'publish new `docs/` for github.io' -- ./docs/ && git push",
+    "test": "mocha"
+  },
+  "author": "Ros McMahon <rosmcmahon@gmail.com>",
+  "contributors": [
+    "Ros McMahon <rosmcmahon@gmail.com>"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "browserlist": "defaults",
+  "dependencies": {
+    "grommet": "^2.28.0",
+    "grommet-icons": "^4.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "chai": "latest",
+    "mocha": "latest",
+    "parcel": "latest",
+    "shx": "latest",
+    "typescript": "latest"
+  }
+}
