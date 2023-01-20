@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"target": "ESNext",
+
+		"outDir": "./dist/",
+		"sourceMap": true,
+		
+		"strict": true,
+    "isolatedModules": true, //parcel compiles modules individually, so this is needed for correct warnings
+		"esModuleInterop": true,
+
+		"allowJs": true,
+		"jsx": "react",
+  },
+	"include": [
+		"./src/**/*"
+	],
+}
