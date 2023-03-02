@@ -9,7 +9,7 @@
 		"sourceMap": true,
 		
 		"strict": true,
-    "isolatedModules": true, //parcel compiles modules individually, so this is needed for correct warnings
+		"isolatedModules": true, //parcel compiles modules individually, so this is needed for correct warnings
 		"esModuleInterop": true,
 
 		"allowJs": true,
