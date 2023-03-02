@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+	"compilerOptions": {
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
 		"module": "ESNext",
 		"moduleResolution": "node",
@@ -14,7 +14,7 @@
 
 		"allowJs": true,
 		"jsx": "react",
-  },
+	},
 	"include": [
 		"./src/**/*"
 	],
