@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "shx rm -rf dist/ .parcel-cache/ docs/",
     "start": "parcel src/index.html",
-    "build": "npm run clean && parcel build --public-url . src/index.html",
+    "build": "npm run clean && parcel build --public-url . src/index.html --no-source-maps",
     "github.io": "npm run build && shx cp -R ./dist/ ./docs && git add ./docs/ && git commit -m 'publish new `docs/` for github.io' -- ./docs/ && git push",
     "test": "mocha"
   },
